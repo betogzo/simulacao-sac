@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio - Modulo 1 - Bootcamp IGTI</title>
+</head>
+<body>
+    <div class="simulacao">
+        <h1>Simulação de Financiamento</h1>
+        <form class="form-sim">
+            <label for="valor-sim">Valor:</label>
+            <input type="number" name="valor-sim" id="valor-sim" value="200000" min="1" required> 
+            <label for="prazo-sim">Prazo (anos):</label>
+            <input type="number" name="prazo-sim" id="prazo-sim" value="20" min="1" max="50" required> 
+            <label for="juros-sim">Juros a.a:</label>
+            <input type="number" step="0.01" name="juros-sim" id="juros-sim" value="0.08" required> 
+            <button type="button" class="btn" onclick="simularFinanciamento()">Simular</button>
+        </form>
+    </div>
+
+    <div class="resultado">
+        <h1>Resultado</h1>
+        <form class="res-sim">
+            <label for="prazo-res">Prazo (meses):</label>
+            <input type="number" name="prazo-res" id="prazo-res" readonly> 
+            <label for="juros-res">Juros a.m:</label>
+            <input type="text" name="juros-res" id="juros-res" readonly> 
+            <label for="jurosac-res">Juros acumulados:</label>
+            <input type="text" name="jurosac-res" id="jurosac-res" readonly> 
+        </form>
+    </div>
+
+        <div class="tab-res">
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>Prestação</th>
+                        <th>Amortização</th>
+                        <th>Juros</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="amort"></td>
+                        <td class="jurosmensal"></td>
+                        <td class="totalparcela"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="amort"></td>
+                        <td class="jurosmensal"></td>
+                        <td class="totalparcela"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="amort"></td>
+                        <td class="jurosmensal"></td>
+                        <td class="totalparcela"></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="amort"></td>
+                        <td class="jurosmensal"></td>
+                        <td class="totalparcela"></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="amort"></td>
+                        <td class="jurosmensal"></td>
+                        <td class="totalparcela"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <footer>
+        <p>&copy; <a href="https://www.linkedin.com/in/albertogaleazzo/" target="_blank">Alberto Galeazzo</a></p>
+        <p>2021 - Bootcamp - Desenvolvedor Front-End - <a href="http://igti.com.br" target="_blank">IGTI</a></p>
+        
+    </footer>
+</body>
+
+<script src="main.js"></script>
+
+</html>

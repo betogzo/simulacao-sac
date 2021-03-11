@@ -1,0 +1,130 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: #666;
+    overflow: hidden;
+    background-image: url('/images/bg-pattern.jpeg');
+    background-repeat: repeat;
+    
+}
+
+h1 {
+    color: #146b52;
+}
+
+.simulacao {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    align-items: left;
+    margin-left: 50px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    align-items: left;
+    margin-left: 50px;
+}
+
+label, input {
+    display: flex;
+    width: 250px;
+}
+
+input {
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #146b52;
+    outline: none;
+    line-height: 20px;
+    font-size: 14px;
+    padding-left: 7px;
+}
+
+.btn {
+    text-transform: uppercase;
+    margin-top: 15px;
+    width: 120px;
+    line-height: 30px;
+    border-radius: 3px;
+    background-color: #328069;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color .05s linear;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #49bf9d;
+}
+
+.btn:active {
+    background-color: rgb(247, 243, 243);
+    color: #328069;
+    border: 2px solid #328069;
+}
+
+.tab-res, .resultado, .simulacao {
+    margin-left: 50px;
+}
+
+.tab-res {
+    visibility: hidden;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+.tabela {
+    border-collapse: collapse;
+    margin-top: 0px;
+}
+
+thead tr th {
+    color: #146b52;
+    border-bottom: 1px solid #bbb;
+}
+
+thead tr th, tbody tr td {
+    padding-left: 50px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+thead tr th:first-child, tbody tr td:first-child {
+    padding-left: 20px;
+}
+
+thead {
+    background-color: #ddd;
+}
+
+thead tr th:last-child, tbody tr td:last-child {
+    padding-right: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #222;
+    width: 100%;
+    color: #555;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+footer > p {
+    margin-top: -10px;
+}
+
+footer a {
+    color: #444;
+    font-weight: bold;
+
+}
